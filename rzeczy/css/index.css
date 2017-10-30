@@ -1,0 +1,116 @@
+﻿html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #7ae088;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+    *, *:before, *:after {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+#projekty {
+    padding: 10px;
+}
+
+    #projekty > div {
+        width: 100%;
+        text-align: center;
+    }
+
+#projekty-kontener {
+    padding: 50px 20% 50px 20%;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+main {
+    background-color: #e0e0e0;
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.font1-3 {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 90%;
+    max-width: 300px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.imie {
+    display: inline-block;
+    padding-left: 5%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+
+.links-container {
+    height: 100%;
+}
+
+.links {
+    height: 45px;
+    text-align: center;
+}
+
+.spolecznosciowe-linki {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+#m-link {
+    background-image: url(../obrazki/m-gray.png);
+    background-size: contain;
+}
+
+    #m-link:hover {
+        background-image: url(../obrazki/m-org.png);
+    }
+
+#gh-link {
+    background-image: url(../obrazki/g-gray.png);
+    background-size: contain;
+}
+
+    #gh-link:hover {
+        background-image: url(../obrazki/g-org.png);
+    }

@@ -1,0 +1,195 @@
+html{
+    background: rgb(201, 234, 255);
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgba(0, 0, 0, .6);
+    background: rgb(201, 234, 255);
+
+    padding-bottom: 5px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /*user-select: none;*/
+
+    cursor: default;
+}
+.div-top{
+    padding: 0 10%; 
+}
+.wiersz{
+    display: flex;
+    justify-content: center; 
+}
+.ws0{
+    height: 0px !important;
+    width: 0px !important;
+    -o-transition:1s;
+    -moz-transition: 1s;
+    -webkit-transition:1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+.wysokosc-szerokosc{
+    height: 40px;
+    width: 40px;
+
+    -o-transition:.5s;
+    -moz-transition: .5s;
+    -webkit-transition:.5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+.padding-2px{
+    padding: 2px;
+}
+.flipper:hover{
+    cursor: pointer;
+}
+img{
+    pointer-events: none;
+}
+.moj_baton{
+    display: inline-block;
+    background-color: #E9FCF6;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    color: rgb(26, 249, 249);
+    -o-transition:.5s;
+    -moz-transition: .5s;
+    -webkit-transition:.5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+.moj_baton:hover{
+    -o-transition:.5s;
+    -moz-transition: .5s;
+    -webkit-transition:.5s;
+    -ms-transition: .5s;
+    transition: .5s;
+    background-color: #888;
+}
+input{
+    margin: 0;
+    padding:0;
+    outline: none;
+    border: none;
+    padding: 4px;
+}
+#div-1-zmiana-imienia{
+    display: none;
+}
+span{
+    margin:0;
+    padding:0;
+    display: inline-block;
+}
+#div-1-zmiana-imienia>p,
+#div-2-gorny-pasek > p{
+    height: 26px;
+    margin:0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#div-2-gorny-pasek > p{
+    position: relative;
+}
+#button-top-10{
+    position: absolute;
+    right: 0px;
+}
+#span-edytuj-imie{
+    display: none;
+}
+#najlepsze_wyniki{
+    display: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+#najlepsze_wyniki > p{
+    position: relative;
+    padding: 8px;
+    margin:0;
+}
+#najlepsze_wyniki > p> span{
+    position: absolute;
+    right: 8px;
+}
+#najlepsze_wyniki > p:nth-child(1){
+    font-style: italic;
+}
+
+#najlepsze_wyniki > p:nth-child(even){
+    background-color: rgba(26, 249, 248, 0.12);
+}
+#najlepsze_wyniki > p:nth-child(odd){
+    background-color: rgba(178, 225, 255, 0.17);
+}
+#przed-info{
+    display: none;
+}
+#info{
+    background-color: rgba(51, 51, 51, 0.71);
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: table;
+}
+#info > p{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+#info > p > span{
+    padding: 16px;
+    background-color: rgba(51, 51, 51, 1);
+    width: 100%;
+}
+
+
+@media all and (max-width: 500px){
+    .div-top{
+        padding: 0 5%;
+    }
+    #najlepsze_wyniki{
+        text-align: left;
+    }
+    #najlepsze_wyniki {
+        width: 98%;
+    }
+}
+
+
+@media all and (max-width: 400px){
+    .div-top{
+        padding: 0 2px;
+    }
+}
+@media all and (max-width: 360px){
+    .moj_baton{
+        display: inline-block;
+        background-color: #E9FCF6;
+        padding: 5px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        cursor: pointer;
+        color: rgb(26, 249, 249);
+        -o-transition:.5s;
+        -moz-transition: .5s;
+        -webkit-transition:.5s;
+        -ms-transition: .5s;
+        transition: .5s;
+    }
+}
