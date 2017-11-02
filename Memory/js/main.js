@@ -38,8 +38,7 @@ $(function () {
 ////////////////////////////////////////////////////////////////////////////////
 //bonusy :D
 ////////////////////////////////////////////////////////////////////////////////
-    losujobrazki();
-    refreshbutton();
+    refreshbutton();//zacznij nowa gre
     if (typeof (Storage) !== "undefined") {
         // Code for localStorage/sessionStorage.
         $(document).on("click", "#dodaj", dodaj);
