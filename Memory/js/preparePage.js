@@ -6,23 +6,21 @@ $(function () {
 
     fillRow();
     fillPlansza();
+    $("#plansza")[0].innerHTML = plansza[0].innerHTML;   
 
     function fillRow() {
-        row.empty();
+        var html = "";
         for (var i = 0; i < 6; i++) {
-            row.append(rowItem[0].innerHTML);
+            html += rowItem[0].outerHTML;
         }
+        row[0].innerHTML = html;
     }
 
     function fillPlansza() {
-        plansza.empty();
+        var html = "";
         for (var i = 0; i < 6; i++) {
-            plansza.append(row[0]);
+            html += row[0].outerHTML;
         }
+        plansza[0].innerHTML = html;
     }
-    
-    $("#nowaPlansza")[0]= plansza;
-    
 });
-
-
