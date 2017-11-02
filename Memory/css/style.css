@@ -18,6 +18,11 @@ body{
 
     cursor: default;
 }
+
+.flip-container{
+    cursor: pointer;
+}
+
 .div-top{
     padding: 0 10%; 
 }
@@ -47,7 +52,7 @@ body{
 .padding-2px{
     padding: 2px;
 }
-.flipper:hover .flip-container{
+.flipper:hover {
     cursor: pointer;
 }
 img{
